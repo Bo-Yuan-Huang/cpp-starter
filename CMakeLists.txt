@@ -54,8 +54,8 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/tests
-    ${PROJECT_SOURCE_DIR}/external/googletest
-    ${PROJECT_SOURCE_DIR}/external/googletest/include)
+    ${PROJECT_SOURCE_DIR}/external/googletest/googletest
+    ${PROJECT_SOURCE_DIR}/external/googletest/googletest/include)
 
 # Make variables referring to all the sources and test files.
 file(GLOB SOURCES "src/*.cpp")
@@ -123,11 +123,11 @@ add_custom_target( git_update
     COMMAND git submodule update
     WORKING_DIRECTORY ${PROJECT_SOURCE_DIR} )
 add_library( googletest
-    ${PROJECT_SOURCE_DIR}/external/googletest/src/gtest-all.cc
-    ${PROJECT_SOURCE_DIR}/external/googletest/src/gtest_main.cc )
+    ${PROJECT_SOURCE_DIR}/external/googletest/googletest/src/gtest-all.cc
+    ${PROJECT_SOURCE_DIR}/external/googletest/googletest/src/gtest_main.cc )
 add_dependencies(googletest git_update)
-set_source_files_properties(${PROJECT_SOURCE_DIR}/external/googletest/src/gtest-all.cc  PROPERTIES GENERATED 1)
-set_source_files_properties(${PROJECT_SOURCE_DIR}/external/googletest/src/gtest_main.cc PROPERTIES GENERATED 1)
+set_source_files_properties(${PROJECT_SOURCE_DIR}/external/googletest/googletest/src/gtest-all.cc  PROPERTIES GENERATED 1)
+set_source_files_properties(${PROJECT_SOURCE_DIR}/external/googletest/googletest/src/gtest_main.cc PROPERTIES GENERATED 1)
 
 
 
