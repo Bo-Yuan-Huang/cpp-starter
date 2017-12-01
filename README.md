@@ -1,14 +1,15 @@
 # cpp-project-template
 CMake/GoogleTest/TravisCI/Coveralls
 
-[![Build Status](https://travis-ci.org/bsamseth/cpp-project.svg?branch=master)](https://travis-ci.org/bsamseth/cpp-project)
-[![Coverage Status](https://coveralls.io/repos/github/bsamseth/cpp-project/badge.svg?branch=master)](https://coveralls.io/github/bsamseth/cpp-project?branch=master)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/bsamseth/cpp-project/blob/master/LICENCE)
-[![Project Status: Inactive - The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+[![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
+[![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Bo-Yuan-Huang/cpp-project-template/blob/master/LICENCE)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+
 
 # Boiler plate for C++ projects 
 
-This is a boiler plate for C++ projects. What you get:
+This is a boiler plate for C++ projects modified from [bsamseth](https://github.com/bsamseth/cpp-project). What you get:
 
 - Sources, headers and mains separated in distinct folders
 - Access to [Google Tests](https://github.com/google/googletest)
