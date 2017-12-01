@@ -41,7 +41,6 @@ before_script:
   - gcov --version
   - g++ --version
   - PARENTDIR=$(pwd)
-  - mkdir external/googletest
   - mkdir $PARENTDIR/build && cd $PARENTDIR/build
   - lcov --directory $PARENTDIR/build --zerocounters
 
