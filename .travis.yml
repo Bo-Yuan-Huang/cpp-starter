@@ -1,8 +1,7 @@
+language: cpp
+os: linux
 sudo: required
 dist: trusty
-language: cpp
-notifications:
-  email: false
 
 env:
   global:
@@ -17,6 +16,15 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-4.8
+            - cmake
+          coverity_scan:
+            project:
+              name: "Bo-Yuan-Huang/SimpleAPI"
+              description: "C++ project template"
+            notification_email: byhuang1992@gmail.com
+            build_command_prepend: "mkdir -p build; cd build; cmake -Dcoverage=ON .."
+            build_command:   "make"
+            branch_pattern: coverity_scan
       env: COMPILER=g++-4.8
     - compiler: clang
       addons:
@@ -27,20 +35,6 @@ matrix:
           packages:
             - clang-3.6
       env: COMPILER=clang++-3.6
-
-addons:
-  apt:
-    packages:
-      - cmake
-
-    coverity_scan:
-      project:
-        name: "Bo-Yuan-Huang/SimpleAPI"
-        description: "C++ project template"
-      notification_email: byhuang1992@gmail.com
-      build_command_prepend: "mkdir -p build; cd build; cmake -Dcoverage=ON .."
-      build_command:   "make"
-      branch_pattern: coverity_scan
 
 
 before_install:
@@ -75,3 +69,6 @@ after_success:
   - lcov --remove coverage.info 'tests/*' 'app/*' 'external/*' 'cmake/*' '/usr/*' --output-file coverage.info # filter out system and test code
   - lcov --list coverage.info # debug before upload
   - coveralls-lcov coverage.info #--repo-token _____ coverage.info # uploads to coveralls
+
+notifications:
+  email: false
