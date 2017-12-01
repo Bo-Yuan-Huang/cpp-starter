@@ -4,6 +4,9 @@ language: cpp
 notifications:
   email: false
 
+env:
+  global:
+    - secure: "QJAeWhifIJMYvriM2qD3KaPCQjzWCnoRRUdW/pNRkGt9OnYxAcRB+SH4bZdRxg/Dj31CRc44jd9aDMhahqAh13tuPR9uhRVnP2NxncUD2EMH4VptHEazrK0zE7nL1W3yiuSwgHT185Jcjta1Xrt4gsOc9J0G8c9WCkvtcUWmxxOrNyq6On17e2dyPsG6j4ZbgJbnOEwYIQbNDKOZ9SBmRtJweBLsb+xk8h4jRRnPOxwKAd1S0IXDkkhWbjx4rb33bJM7TwtGq2MUSygd+fc9cbg5h4Ke9JzXUTe8MfNe8nIjx3luiOkxZM1igIQz5mr3vuwhqtmRi7vznXA78ToQUqEILWmihUkxoqvJf7JfiHI/izItqMuNhZDXToCz0oKAF77uasi4sRTRPsmgA+ttl0rg9QZQrmqjA4UA1O6MtHwBwgNulVz6hsLM2QY89bSmdcT1bd6+Lz5L2vtrYtbZ85C/ObHVXdd9SYwystL7LdWpj1s5rrFdDa0F/SDGmQkmDqsyYLhla/H1T4LldgjcffjMu+Jyr7gzRIHqLHPyzoONuqinueybvtpVOblMHh8mdIGNR4CSAJGizPj2a/TcdomC5KlSTZ3ONZs3F3qo8kcIaPO61Nl4hvEiK7AH7pd6T/4k3EEHeKSPLpWn2d+udGNd5O8q9Tf7RR2sfVqqvpA="
 
 matrix:
   include:
@@ -25,8 +28,25 @@ matrix:
             - clang-3.6
       env: COMPILER=clang++-3.6
 
+addons:
+  apt:
+    packages:
+      - cmake
+
+    coverity_scan:
+      project:
+        name: "Bo-Yuan-Huang/SimpleAPI"
+        description: "C++ project template"
+      notification_email: byhuang1992@gmail.com
+      build_command_prepend: "mkdir -p build; cd build; cmake -Dcoverage=ON .."
+      build_command:   "make"
+      branch_pattern: coverity_scan
+
+
 before_install:
   - sudo apt-get update -qq
+  # coverity
+   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 install:
   - gem install coveralls-lcov	

@@ -3,6 +3,7 @@ CMake/GoogleTest/TravisCI/Coveralls
 
 [![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
 [![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
+[![Coverity Scan Build Status](https://img.shields.io/coverity/scan/14479.svg)](https://scan.coverity.com/projects/bo-yuan-huang-cpp-project-template)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Bo-Yuan-Huang/cpp-project-template/blob/master/LICENCE)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
@@ -77,16 +78,4 @@ If repository is activated with Travis-CI, then unit tests will be built and exe
 If repository is activated with Coveralls, then deployment to Travis will also calculate code coverage and
 upload this to Coveralls.io. 
 
-## Setup
-When starting a new project, you probably don't want the history of this repository. To start fresh, with just the files
-and no history, you simply delete the `.git/` directory and start a new one:
 
-``` bash
-$ git clone <link to this repo>
-$ cd cpp-project
-$ rm -rf .git
-$ git init
-$ git commit -am "Added C++ Boiler Plate"
-```
-
-The result is a fresh Git repository with one commit adding all files from the boiler plate. 
