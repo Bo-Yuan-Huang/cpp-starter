@@ -1,3 +1,6 @@
+# cpp-project-template
+CMake/GoogleTest/TravisCI/Coveralls
+
 [![Build Status](https://travis-ci.org/bsamseth/cpp-project.svg?branch=master)](https://travis-ci.org/bsamseth/cpp-project)
 [![Coverage Status](https://coveralls.io/repos/github/bsamseth/cpp-project/badge.svg?branch=master)](https://coveralls.io/github/bsamseth/cpp-project?branch=master)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/bsamseth/cpp-project/blob/master/LICENCE)
@@ -86,4 +89,3 @@ $ git commit -am "Added C++ Boiler Plate"
 ```
 
 The result is a fresh Git repository with one commit adding all files from the boiler plate. 
-
