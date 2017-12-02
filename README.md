@@ -1,5 +1,5 @@
 # cpp-project-template
-CMake/GoogleTest/TravisCI/Coveralls
+CMake/GoogleTest/TravisCI/Coveralls/CoverityScan
 
 [![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
 [![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
