@@ -19,8 +19,8 @@ addons:
         name: "Bo-Yuan-Huang/cpp-project-template"
         description: "Build submitted via Travis CI"
       notification_email: byhuang1992@gmail.com
-      build_command_prepend: "mkdir build && cd build && cmake -Dcoverage=ON .."
-      build_command:   "cd build && make"
+      build_command_prepend: "mkdir build && cd build && cmake -Dcoverage=ON $PARENTDIR"
+      build_command:   "cd $PARENTDIR/build && make"
       branch_pattern: coverity_scan
 
 before_install:
