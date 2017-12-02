@@ -5,7 +5,7 @@ dist: trusty
 
 env:
   global:
-    - secure: "jP3xxCcXvjsqP8Oz0TcfaQPyGwS1QGN4Fai/w4ietZt6niu9iaCoewqHsr1P7d/2KtoBNfkyNl8eU51WUpl+49WrZgpsYVFgg20h6ThZtvMH2PWAk4VfsUJFAMZ3hzF4tYtlhBZz2gQLpGnPJbi4OET41upUnc03fZ074w8E40jBmnXTEASIP5L6/nCthr7bz1g0a9s/2oe53pHSvAe+BtGsdFMFXLrBPbAhilWXHlSYMWI5sKbRFd5bEErrbOsyht4PCcEnBURqIEIgQSj62TroV+K4mHxHWQmjF3d/YRo7to2rO2wFqbmTK3NdY92kBMkKEjQ2ayHncHSJ6VOgBbkjFu6+oGyrHTzDBnQAsJ0WCMqLm2Uw9iUaFGaeuZptJzs0kjj4ZqGQkEFMvCyjiyD+UuNvfh/ewG+Ag/EXqM7b+37SeiE4j1CzO53m6ivxW1duRCw2/taB6HBfe6aTazz6+1JBJbbTPpap8wnRRM1z+T97zeGAXu6jbhnq7knuDFEIcUHmwkiR64JR2ucbbJT2s3iSMZ3dhmkCmo23JBFOrk3BNAjn4AsRL3xZ8G5WZ6P9reR/WPu4tc31//kihFl/Gn/p9WD3GF4m2eiFAjtxPTrczGWeYhTT3EhuQSzhMHcnayQOURtsnBtGZ8pqtjt/3uo5/5B+hx3/lxrAWHw="
+    - secure: "Hu4hm8IEpgW+/qjXH5reblRWF2X1BEwTwlSL53bDCOW2luJ2uJ+UFmD/mMsB18koQ5idEoRThqmu8rJCHzv+bWCy3yB+CJzB5ktOISknzfw+DIB2FK7H8xrn0Y1Hsi7+NqFAfMhi11LLvVZ8+5TwhmnHqextO0EfAFafYGfDJuoEdOBbBWScrczDdE0r/DFQZF0iAsLDRbmD3a6+Y8r/4ypU9Pz9z1V3rZ/vIiCdiQ12Z4QWdrzYkUWq7uJv4gKU19im9Br+cIj3rOFCAS2J64586BsGOZ90YlCjwpCZksTwU8pLLsT6XeI3UNxoKWI90whxfMZgsBwCUPOCPrYrPn8Ye7l8IqN42G1OjgzxSULiS1bmx9dMVMH2UfY7UBu3KSiXd4/1hlofJWIdgPPIlcMWurebdu4GnmBtUiDPlB1KP8X5p3Vo4AL5G04Q5LedfcFztbYhYhWMk003FVs4/Si/CSfMMQFnmHBOinBfTOVrI9LNjJUFqHc2NvX3ruOph+129ZKT9L1rIGza481QqTBl3jKUIasSq9YbLGVtkkkXD51/5IrInb2hac0rqzd6hXHCd70fN4eSEnj2rLK4YCcR2h2CnSygNldX0g7Tw2Tn0eIdJ9h4Npy6/bmzaZW+YZbZSzZ/T3HqidFElqMaok0XYz8pXKR/uwjoR83ZPNk="
 
 addons:
   #apt:
@@ -16,8 +16,8 @@ addons:
   #    - cmake
     coverity_scan:
       project:
-        name: "Bo-Yuan-Huang/SimpleAPI"
-        description: "C++ project template"
+        name: "Bo-Yuan-Huang/cpp-project-template"
+        description: "Build submitted via Travis CI"
       notification_email: byhuang1992@gmail.com
       build_command_prepend: "mkdir -p build; cd build; cmake -Dcoverage=ON .."
       build_command:   "make"
