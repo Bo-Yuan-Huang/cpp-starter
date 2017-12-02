@@ -31,7 +31,8 @@ before_install:
 install:
   - gem install coveralls-lcov	
   - sudo apt-get install cmake cmake-data
-  - sudo apt-get install liblapack-dev libblas-dev libboost-dev libarmadillo-dev
+  #- sudo apt-get install liblapack-dev libblas-dev libboost-dev libarmadillo-dev
+  - sudo apt-get install libboost-dev
   # install newer LCOV (1.9 was failing)
   #- wget http://ftp.de.debian.org/debian/pool/main/l/lcov/lcov_1.11.orig.tar.gz
   #- tar xf lcov_1.11.orig.tar.gz
@@ -50,9 +51,9 @@ script:
   - cd $PARENTDIR/build
   - cmake -Dcoverage=ON -DCMAKE_CXX_COMPILER=$COMPILER $PARENTDIR
   - make
-  - make gtest
 
 after_success:
+  - make gtest
   - lcov --directory $PARENTDIR/build --capture --output-file coverage.info # capture coverage info
   - lcov --remove coverage.info 'tests/*' 'app/*' 'external/*' 'cmake/*' '/usr/*' --output-file coverage.info # filter out system and test code
   - lcov --list coverage.info # debug before upload
