@@ -1,9 +1,6 @@
 #include "example.h"
 
-Dummy::Dummy() {
-  
-}
+Dummy::Dummy() {}
 
-bool Dummy::doSomething() {
-  return true;
-}
+bool Dummy::doSomething() { return true; }
+
