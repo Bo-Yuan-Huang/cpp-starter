@@ -4,8 +4,8 @@ CMake/GoogleTest/TravisCI/Coveralls/CoverityScan
 [![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
 [![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
 [![Coverity Scan Build Status](https://img.shields.io/coverity/scan/14479.svg)](https://scan.coverity.com/projects/bo-yuan-huang-cpp-project-template)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Bo-Yuan-Huang/cpp-project-template/blob/master/LICENCE)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Bo-Yuan-Huang/cpp-project-template/blob/master/LICENCE)
 
 
 # Boiler plate for C++ projects 
