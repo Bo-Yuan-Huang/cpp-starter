@@ -8,12 +8,12 @@ env:
     - secure: "QJAeWhifIJMYvriM2qD3KaPCQjzWCnoRRUdW/pNRkGt9OnYxAcRB+SH4bZdRxg/Dj31CRc44jd9aDMhahqAh13tuPR9uhRVnP2NxncUD2EMH4VptHEazrK0zE7nL1W3yiuSwgHT185Jcjta1Xrt4gsOc9J0G8c9WCkvtcUWmxxOrNyq6On17e2dyPsG6j4ZbgJbnOEwYIQbNDKOZ9SBmRtJweBLsb+xk8h4jRRnPOxwKAd1S0IXDkkhWbjx4rb33bJM7TwtGq2MUSygd+fc9cbg5h4Ke9JzXUTe8MfNe8nIjx3luiOkxZM1igIQz5mr3vuwhqtmRi7vznXA78ToQUqEILWmihUkxoqvJf7JfiHI/izItqMuNhZDXToCz0oKAF77uasi4sRTRPsmgA+ttl0rg9QZQrmqjA4UA1O6MtHwBwgNulVz6hsLM2QY89bSmdcT1bd6+Lz5L2vtrYtbZ85C/ObHVXdd9SYwystL7LdWpj1s5rrFdDa0F/SDGmQkmDqsyYLhla/H1T4LldgjcffjMu+Jyr7gzRIHqLHPyzoONuqinueybvtpVOblMHh8mdIGNR4CSAJGizPj2a/TcdomC5KlSTZ3ONZs3F3qo8kcIaPO61Nl4hvEiK7AH7pd6T/4k3EEHeKSPLpWn2d+udGNd5O8q9Tf7RR2sfVqqvpA="
 
 addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-      - cmake
+  #apt:
+  #  sources:
+  #    - ubuntu-toolchain-r-test
+  #  packages:
+  #    - g++-4.8
+  #    - cmake
     coverity_scan:
       project:
         name: "Bo-Yuan-Huang/SimpleAPI"
@@ -30,6 +30,7 @@ before_install:
 
 install:
   - gem install coveralls-lcov	
+  - sudo apt-get install cmake cmake-data
   - sudo apt-get install liblapack-dev libblas-dev libboost-dev libarmadillo-dev
   # install newer LCOV (1.9 was failing)
   #- wget http://ftp.de.debian.org/debian/pool/main/l/lcov/lcov_1.11.orig.tar.gz
