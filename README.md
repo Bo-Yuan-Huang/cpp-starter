@@ -1,5 +1,4 @@
 # cpp-project-template
-CMake/GoogleTest/TravisCI/Coveralls/CoverityScan
 
 [![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
 [![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
@@ -8,16 +7,15 @@ CMake/GoogleTest/TravisCI/Coveralls/CoverityScan
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Bo-Yuan-Huang/cpp-project-template/blob/master/LICENCE)
 
 
-# Boiler plate for C++ projects 
+This is a starting template for C++ projects that supports:
 
-This is a boiler plate for C++ projects modified from [bsamseth](https://github.com/bsamseth/cpp-project). What you get:
-
-- Sources, headers and mains separated in distinct folders
+- Hierarchical sources and headers 
 - Access to [Google Tests](https://github.com/google/googletest)
 - Use of [CMake](https://cmake.org/) for much easier compiling
 - Code documentation with [Doxygen](http://www.stack.nl/~dimitri/doxygen/)
 - Continuous testing with [Travis-CI](https://travis-ci.org/)
 - Code coverage with [Coveralls.io](https://coveralls.io/)
+- Static analysis with [Coverity Sacn](https://scan.coverity.com)
 
 ## Structure
 ```
@@ -78,4 +76,9 @@ If repository is activated with Travis-CI, then unit tests will be built and exe
 If repository is activated with Coveralls, then deployment to Travis will also calculate code coverage and
 upload this to Coveralls.io. 
 
+If repository is activated with Coverity-Scan, then source commited will be uploaded to Coverity Scan for static analysis.
+
+
+## Acknowledgement 
+This template is extended based on [cpp-project](https://github.com/bsamseth/cpp-project). 
 
