@@ -1,6 +1,6 @@
 # cpp-project-template
 
-[![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-project-template)
+[![Build Status](https://travis-ci.org/Bo-Yuan-Huang/cpp-starter.svg?branch=master)](https://travis-ci.org/Bo-Yuan-Huang/cpp-starter)
 [![Coverage Status](https://coveralls.io/repos/github/Bo-Yuan-Huang/cpp-project-template/badge.svg?branch=master)](https://coveralls.io/github/Bo-Yuan-Huang/cpp-project-template?branch=master)
 [![Coverity Scan Build Status](https://img.shields.io/coverity/scan/14479.svg)](https://scan.coverity.com/projects/bo-yuan-huang-cpp-project-template)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
